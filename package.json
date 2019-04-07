@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "node fuse",
     "build": "node fuse dist",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node deploy",
+    "predeploy": "yarn build"
   },
   "dependencies": {
     "lodash": "^4.17.11",
@@ -26,6 +28,7 @@
     "@vue/cli-service": "^3.5.0",
     "fibers": "^3.1.1",
     "fuse-box": "^3.7.1",
+    "gh-pages": "^2.0.1",
     "hygen": "^4.0.2",
     "js-beautify": "^1.9.1",
     "postcss-selector-parser": "^6.0.2",

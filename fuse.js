@@ -67,7 +67,7 @@ Sparky.task('config', () => {
   if (!isProduction) {
     fuse.dev({
       fallback: 'index.html',
-      port: 8080
+      port: 8000
     });
   }
 
