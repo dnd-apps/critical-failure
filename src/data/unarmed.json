@@ -1,0 +1,182 @@
+[
+  {
+    "low": 1,
+    "high": 5,
+    "title": "Slipped",
+    "effect": "You must make a successful DC 10 DEX Save or immediately fall prone."
+  },
+  {
+    "low": 6,
+    "high": 9,
+    "title": "Pulled up lame",
+    "effect": "You must make a successful DC 10 CON save or your speed is halved until the encounter ends.."
+  },
+  {
+    "low": 10,
+    "high": 10,
+    "title": " Something in your eye",
+    "effect": "Your melee attacks only do half damage for the remainder of the encounter."
+  },
+  {
+    "low": 11,
+    "high": 15,
+    "title": "Wicked backswing",
+    "effect": "You strike yourself slightly on your backswing and take 1d8 damage."
+  },
+  {
+    "low": 16,
+    "high": 19,
+    "title": "Wind knocked out of you",
+    "effect": "You become exhausted to level 1 of that condition."
+  },
+  {
+    "low": 20,
+    "high": 20,
+    "title": "Loss of confidence",
+    "effect": "You gain disadvantage for your attacks against this opponent for the remainder of the encounter."
+  },
+  {
+    "low": 21,
+    "high": 25,
+    "title": "Shook yourself up",
+    "effect": "You are stunned for 1 rd."
+  },
+  {
+    "low": 26,
+    "high": 29,
+    "title": "Give them hope",
+    "effect": "Your target’s allies within 30 feet gain a d6 inspiration die that can be used during this encounter."
+  },
+  {
+    "low": 30,
+    "high": 30,
+    "title": "Panic attack",
+    "effect": "You must make a successful DC 10 WIS Save or become frightened for the remainder of the encounter."
+  },
+  {
+    "low": 31,
+    "high": 35,
+    "title": "Bruised",
+    "effect": " You injure yourself slightly; you take 1d6 damage every round until healed."
+  },
+  {
+    "low": 36,
+    "high": 39,
+    "title": "Discombobulated",
+    "effect": "You become incapacitated for 1 rd."
+  },
+  {
+    "low": 40,
+    "high": 40,
+    "title": "You’ve fallen and you can’t get up",
+    "effect": "You immediately fall prone and lose all movement this round."
+  },
+  {
+    "low": 41,
+    "high": 45,
+    "title": "Bad timing",
+    "effect": "You drop to last in the imitative order for the combat but do not act again this turn."
+  },
+  {
+    "low": 46,
+    "high": 49,
+    "title": "Broken bone",
+    "effect": " You break a bone in your hand. You suffer disadvantage for the rest of the encounter and take 1d6 damage every rd. until healed."
+  },
+  {
+    "low": 50,
+    "high": 50,
+    "title": "Easy prey",
+    "effect": " Allies of the target within 20’ will attack you with their next turn,  unless they would suffer an Attack of Opportunity to do so."
+  },
+  {
+    "low": 51,
+    "high": 55,
+    "title": "Exposed defenses",
+    "effect": "Your attack unbalances you so much that your target may take one melee attack against you as a reaction."
+  },
+  {
+    "low": 56,
+    "high": 59,
+    "title": "Your own worst enemy",
+    "effect": "You suffer the effects of a bane spell for the remainder of the encounter."
+  },
+  {
+    "low": 60,
+    "high": 60,
+    "title": "Unguarded",
+    "effect": " All adjacent allies of your target may immediately take an attack of opportunity against you."
+  },
+  {
+    "low": 61,
+    "high": 65,
+    "title": "Costly mistake",
+    "effect": "Your target may reroll all 1s and 2s on the damage roll for his next successful melee attack vs. you."
+  },
+  {
+    "low": 66,
+    "high": 69,
+    "title": "Revealed intentions",
+    "effect": "You and your allies all suffer disadvantage for your next attack."
+  },
+  {
+    "low": 70,
+    "high": 70,
+    "title": "Wrong target",
+    "effect": " You mistakenly strike an ally adjacent to you with your attack."
+  },
+  {
+    "low": 71,
+    "high": 75,
+    "title": "Stuck!",
+    "effect": "Your foot becomes lodged in the floor or a nearby object. You are restrained. You must make a DC 14 STR check to remove it as an action."
+  },
+  {
+    "low": 76,
+    "high": 79,
+    "title": "Devastating error",
+    "effect": " Your opponent may immediately make one melee attack with advantage against you."
+  },
+  {
+    "low": 80,
+    "high": 80,
+    "title": "Collision",
+    "effect": " You collide with an adjacent ally,  knocking you both prone."
+  },
+  {
+    "low": 81,
+    "high": 85,
+    "title": "Thrown into chaos",
+    "effect": "You crash into all adjacent allies; you are all knocked prone and lose all movement this round."
+  },
+  {
+    "low": 86,
+    "high": 89,
+    "title": "Panic attack",
+    "effect": " You immediately suffer the effects of the Confusion spell for 1 rd."
+  },
+  {
+    "low": 90,
+    "high": 90,
+    "title": "Horrible aftermath",
+    "effect": " Roll twice on this chart and apply both effects to yourself."
+  },
+  {
+    "low": 91,
+    "high": 95,
+    "title": "Self-inflicted wound",
+    "effect": " Your missed attack is costly. Roll your damage as if you had hit your target and apply it to yourself."
+  },
+  {
+    "low": 96,
+    "high": 99,
+    "title": "Did you see that?",
+    "effect": "Your missed attack is costly. Apply the maximum damage to yourself as if you had hit your target."
+  },
+  {
+    "low": 100,
+    "high": 100,
+    "title": "No!",
+    "effect": "Your missed attack is costly, Apply the maximum critical damage to yourself as if you had hit your target."
+  }
+]
