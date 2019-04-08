@@ -1,6 +1,7 @@
 // Store
 export interface State {
   fumble: Fumble;
+  fumbleModalToggle: boolean;
 }
 
 // Mutation

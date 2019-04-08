@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "sass-mq": "^5.0.0",
     "vue": "^2.6.10",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^8.0.0",

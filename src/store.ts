@@ -11,12 +11,16 @@ const state: State = {
     low: 0,
     title: '',
     effect: ''
-  }
+  },
+  fumbleModalToggle: false
 };
 
 const mutations = {
   setFumble(state: State, data: Fumble) {
     state.fumble = data;
+  },
+  toggleFumbleModal(state: State) {
+    state.fumbleModalToggle = state.fumbleModalToggle ? false : true;
   }
 };
 

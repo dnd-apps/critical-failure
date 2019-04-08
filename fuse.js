@@ -8,31 +8,53 @@ const {
   CSSPlugin,
   CSSResourcePlugin,
   WebIndexPlugin,
-  Sparky
 } = require('fuse-box');
+const {
+  task,
+  src,
+  watch,
+  exec
+} = require("fuse-box/sparky");
+
+const fs = require('fs');
+const path = require('path');
+const glob = require("glob")
 
 let fuse;
 let isProduction = false;
+const assetPath = path.join(__dirname, './src/assets');
 
-Sparky.task('set-prod', () => {
+
+task('set-prod', () => {
   isProduction = true;
 });
-Sparky.task('clean', () => Sparky.src('./dist').clean('dist/'));
-Sparky.task('watch-assets', () =>
-  Sparky.watch('./assets', {
-    base: './src'
-  }).dest('./dist')
-);
-Sparky.task('copy-assets', () =>
-  Sparky.src('./assets', {
-    base: './src'
-  }).dest('./dist')
-);
+
+task('clean', async () => await src('./dist').clean('dist/'));
+
+// task("watch-assets", async () => await watch("./assets", {
+//   base: "./src"
+// }).dest("./dist"));
+
+task("copy-assets", async () => {
+  return await glob(assetPath + '/**/*.*', (err, files) => {
+    if (err) throw err;
+    files.forEach(source => {
+      const dest = source.replace('/src/', '/dist/')
+      if (!fs.existsSync(path.dirname(dest))) {
+        fs.mkdirSync(path.dirname(dest));
+      }
+      fs.copyFile(source, dest, (err) => {
+        if (err) throw err;
+      });
+    })
+  });
+});
 
 
-Sparky.task('config', () => {
+task('config', () => {
   fuse = FuseBox.init({
     homeDir: './src',
+    target: "browser@es6",
     output: 'dist/$name.js',
     sourceMaps: !isProduction,
     useTypescriptCompiler: true,
@@ -42,16 +64,13 @@ Sparky.task('config', () => {
       VueComponentPlugin({
         style: [
           SassPlugin({
-            importer: true
+            importer: true,
+            outputStyle: "compressed"
           }),
           CSSResourcePlugin(),
-          CSSPlugin({
-            group: 'components.css',
-            inject: 'components.css'
-          })
+          CSSPlugin()
         ]
       }),
-      CSSPlugin(),
       WebIndexPlugin({
         template: 'src/index.html'
       }),
@@ -80,18 +99,18 @@ Sparky.task('config', () => {
   }
 });
 
-Sparky.task(
+task(
   'default',
-  ['clean', 'watch-assets', 'config'],
-  () => {
+  async () => {
+    await exec('clean', 'copy-assets', 'config')
     return fuse.run();
   }
 );
 
-Sparky.task(
+task(
   'dist',
-  ['clean', 'copy-assets', 'set-prod', 'config'],
-  () => {
+  async () => {
+    await exec('clean', 'copy-assets', 'set-prod', 'config')
     return fuse.run();
   }
 );

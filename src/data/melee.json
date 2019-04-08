@@ -1,5 +1,4 @@
-[
-  {
+[{
     "low": 1,
     "high": 5,
     "title": "Slipped_",
@@ -57,7 +56,7 @@
     "low": 31,
     "high": 35,
     "title": "Dropped weapon",
-    "effect": "Your drop your weapon and it falls 10’ from your location in a random direction."
+    "effect": "On your swing, your weapon slips from your hand and flies in a random direction about 10'. (DMs discretion on direction) The first NPC or player in line of the weapons trajectory must make a Athletics check DC 10 . On fail, the player who tossed the weapon rolls damage and the victim receives full damage. If the victim critical fails the save they take double damage."
   },
   {
     "low": 36,

@@ -7,6 +7,8 @@ import { Fumble } from '../../types';
 @Component
 export default class RtdCombat extends Vue {
   @Mutation public setFumble!: (data: Fumble) => void;
+  @Mutation public toggleFumbleModal!: () => void;
+
   public state = {
     type: '',
     title: '',
@@ -22,7 +24,7 @@ export default class RtdCombat extends Vue {
     this.state.type = this.type;
     this.effect = '';
     if (this.type === 'unarmed') {
-      this.state.type += '/imporvised';
+      this.state.type += ' / imporvised';
     }
   }
   public async handleRtd() {
@@ -39,6 +41,9 @@ export default class RtdCombat extends Vue {
     } else {
       this.state.retries = 0;
       this.setFumble(outcome);
+    }
+    if (screen.width < 740) {
+      this.toggleFumbleModal();
     }
   }
 }
