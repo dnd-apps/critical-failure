@@ -1,6 +1,6 @@
 # critical-failure
 
-[mbround18.github.io/critical-failure/](https://mbround18.github.io/critical-failure/)
+[critical-fail.dnd-apps.dev](https://critical-fail.dnd-apps.dev/)
 
 ## Project setup
 
@@ -29,3 +29,8 @@ yarn lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Credits
+
+[Fumble Charts – D&D 5th Edition by wolvercote66](https://saveversus.wordpress.com/2014/09/15/fumble-charts-dd-5th-edition/)
