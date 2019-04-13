@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "node fuse",
     "build": "node fuse dist",
+    "postbuild": "node ./src/scripts/postbuild",
     "lint": "vue-cli-service lint",
     "deploy": "node deploy",
     "predeploy": "yarn build"
@@ -16,6 +17,7 @@
     "vue": "^2.6.10",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^8.0.0",
+    "vue-router": "^3.0.4",
     "vuex": "^3.1.0",
     "vuex-class": "^0.3.2"
   },
@@ -36,6 +38,7 @@
     "postcss-selector-parser": "^6.0.2",
     "sass": "^1.17.2",
     "sass-loader": "^7.1.0",
+    "shelljs": "^0.8.3",
     "tslint": "^5.15.0",
     "typescript": "^3.2.1",
     "vue-hot-reload-api": "^2.3.3",

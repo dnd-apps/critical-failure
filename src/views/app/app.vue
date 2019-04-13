@@ -11,5 +11,6 @@
       <FumbleDisplay></FumbleDisplay>
       <FumbleModal></FumbleModal>
     </div>
+    <router-view/>
   </div>
 </template>
