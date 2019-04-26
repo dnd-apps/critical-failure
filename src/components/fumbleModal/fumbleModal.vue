@@ -10,6 +10,7 @@
       <h2 v-if="fumble.title.length > 0">{{ fumble.title }}</h2>
       <hr>
       <p v-if="fumble.effect.length > 0">{{ fumble.effect }}</p>
+      <small class="dummy-btn">Click/Tap to close.</small>
     </div>
   </div>
 </template>

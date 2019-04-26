@@ -1,16 +1,14 @@
 // tslint:disable: no-shadowed-variable
-import Vue from 'vue';
-import Vuex from 'vuex';
-import { State, Fumble } from './types';
 
-Vue.use(Vuex);
+import Vuex from "vuex";
+import { State, Fumble } from "./types";
 
 const state: State = {
   fumble: {
     high: 0,
     low: 0,
-    title: '',
-    effect: ''
+    title: "",
+    effect: ""
   },
   fumbleModalToggle: false
 };

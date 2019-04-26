@@ -1,22 +1,20 @@
 import Vue from "vue";
-import VueRouter from "vue-router";
 
 import App from "./views/app/app.vue";
-import { store } from "./store";
-import Hello from "./views/hello/hello.vue";
+
+import VueRouter from "vue-router";
+import Vuex from "vuex";
 
 Vue.config.productionTip = false;
 
-const routes = [{ path: "/hello", component: Hello }];
-
-const router = new VueRouter({
-  routes // short for `routes: routes`
-});
-
+Vue.use(Vuex);
 Vue.use(VueRouter);
 
+import { store } from "./store";
+import { router } from "./router";
+
 new Vue({
-  store,
   router,
+  store,
   render: h => h(App)
 }).$mount("#app");

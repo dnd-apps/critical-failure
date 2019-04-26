@@ -1,5 +1,4 @@
-@import '../../styles/media.scss';
-
+@import "../../styles/media.scss";
 
 button {
   display: block;
@@ -18,7 +17,6 @@ button {
   outline: none;
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 
 button:hover {
   border: 1px solid purple;
@@ -44,11 +42,11 @@ button:hover {
   background-position: 50%;
   transform: scale(10, 10);
   opacity: 0;
-  transition: transform .5s, opacity 1s;
+  transition: transform 0.5s, opacity 1s;
 }
 
 .ripple:active:after {
   transform: scale(0, 0);
-  opacity: .3;
+  opacity: 0.3;
   transition: 0s;
 }
