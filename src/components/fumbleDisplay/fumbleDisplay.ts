@@ -1,6 +1,6 @@
-import { Component, Vue } from "vue-property-decorator";
-import { State, Mutation } from "vuex-class";
-import { Fumble } from "../../types";
+import { Component, Vue } from 'vue-property-decorator';
+import { State, Mutation } from 'vuex-class';
+import { Fumble } from '../../types';
 
 @Component
 export default class FumbleDisplay extends Vue {

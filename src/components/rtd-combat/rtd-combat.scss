@@ -1,4 +1,4 @@
-@import "../../styles/media.scss";
+@import '../../styles/media.scss';
 
 button {
   display: block;
@@ -29,7 +29,7 @@ button:hover {
 }
 
 .ripple:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;

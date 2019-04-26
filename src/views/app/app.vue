@@ -2,6 +2,8 @@
 <style  lang="scss" src="./app.scss"></style>
 <template>
   <div class="app" :style="appStyle">
-    <router-view></router-view>
+    <div id="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>

@@ -1,9 +1,4 @@
-import { Component, Vue } from "vue-property-decorator";
-import Navigation from "../../components/navigation/navigation.vue";
+import { Component, Vue } from 'vue-property-decorator';
 
-@Component({
-  components: {
-    Navigation
-  }
-})
+@Component
 export default class App extends Vue {}

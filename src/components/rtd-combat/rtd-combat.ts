@@ -1,8 +1,8 @@
-import _ from "lodash";
-import { Component, Prop, Vue } from "vue-property-decorator";
+import _ from 'lodash';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
-import { Mutation } from "vuex-class";
-import { Fumble } from "../../types";
+import { Mutation } from 'vuex-class';
+import { Fumble } from '../../types';
 
 @Component
 export default class RtdCombat extends Vue {
@@ -10,9 +10,9 @@ export default class RtdCombat extends Vue {
   @Mutation public toggleFumbleModal!: () => void;
 
   public state = {
-    type: "",
-    title: "",
-    effect: "",
+    type: '',
+    title: '',
+    effect: '',
     retries: 0
   };
   @Prop() public type!: string;
@@ -22,9 +22,9 @@ export default class RtdCombat extends Vue {
   public effect!: string;
   public mounted() {
     this.state.type = this.type;
-    this.effect = "";
-    if (this.type === "unarmed") {
-      this.state.type += " / imporvised";
+    this.effect = '';
+    if (this.type === 'unarmed') {
+      this.state.type += ' / imporvised';
     }
   }
   public async handleRtd() {
@@ -34,7 +34,7 @@ export default class RtdCombat extends Vue {
     );
     if (!outcome) {
       if (this.state.retries === 3) {
-        throw new Error("Issue finding fumble in range: ");
+        throw new Error('Issue finding fumble in range: ');
       }
       this.state.retries += 1;
       this.handleRtd();
