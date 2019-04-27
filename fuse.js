@@ -61,7 +61,7 @@ task('config', () => {
       }),
       JSONPlugin(),
       WebIndexPlugin({
-        template: 'src/index.html'
+        template: 'public/index.html'
       }),
       isProduction &&
         QuantumPlugin({

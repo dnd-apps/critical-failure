@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "sass-mq": "^5.0.0",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
@@ -22,14 +22,16 @@
     "vuex-class": "^0.3.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
     "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-env": "^7.4.4",
     "@types/lodash": "^4.14.123",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-typescript": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
     "fibers": "^3.1.1",
     "fuse-box": "^3.7.1",
     "gh-pages": "^2.0.1",
@@ -42,6 +44,7 @@
     "tslint": "^5.16.0",
     "typescript": "^3.4.5",
     "vue-hot-reload-api": "^2.3.3",
+    "vue-language-server": "^0.0.52",
     "vue-template-compiler": "^2.6.10",
     "vue-template-es2015-compiler": "^1.9.1",
     "webpack": "^4.29.6"
