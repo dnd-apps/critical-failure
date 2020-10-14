@@ -1,12 +1,12 @@
 <template>
   <div class="fumble-card">
     <div id="fumble-rolls" class="flex flex-row justify-between width-full">
-      <div id="high-roll">
-        <strong>High {{high}}</strong>
-      </div>
       <div id="low-roll">
         <strong>Low {{low}}</strong>
       </div>      
+      <div id="high-roll">
+        <strong>High {{high}}</strong>
+      </div>
     </div>
     <div id="fumble-content">
       <p class="italic pt-1">{{title}}</p>
