@@ -33,7 +33,7 @@
     "postcss": "8.2.14",
     "postcss-responsive-type": "1.0.0",
     "postcss-selector-parser": "6.0.5",
-    "sass": "1.27.0",
+    "sass": "1.32.12",
     "sass-loader": "8.0.2",
     "shelljs": "0.8.4",
     "ts-loader": "8.2.0",
