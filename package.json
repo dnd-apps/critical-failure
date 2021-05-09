@@ -13,7 +13,7 @@
     "lodash": "4.17.21",
     "node-sass": "4.14.1",
     "nuxt": "2.15.5",
-    "tailwindcss": "1.8.12",
+    "tailwindcss": "1.9.6",
     "vue": "2.6.12",
     "vue-class-component": "7.2.6",
     "vue-material": "1.0.0-beta-15",
