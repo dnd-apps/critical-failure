@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@nuxt/types": "2.15.5",
-    "@nuxt/typescript-build": "2.0.3",
+    "@nuxt/typescript-build": "2.1.0",
     "@nuxt/typescript-runtime": "2.1.0",
     "@types/lodash": "4.14.161",
     "autoprefixer": "10.2.5",
