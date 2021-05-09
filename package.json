@@ -44,6 +44,6 @@
     "vue-language-server": "0.0.67",
     "vue-template-compiler": "2.6.12",
     "vue-template-es2015-compiler": "1.9.1",
-    "webpack": "4.44.2"
+    "webpack": "4.46.0"
   }
 }
