@@ -12,7 +12,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@auto-it/core@npm:10.27.1":
+"@auto-it/core@npm:10.27.1, @auto-it/core@npm:^10.27.1":
   version: 10.27.1
   resolution: "@auto-it/core@npm:10.27.1"
   dependencies:
@@ -1261,7 +1261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.11.5, @babel/preset-env@npm:^7.14.1, @babel/preset-env@npm:^7.4.4":
+"@babel/preset-env@npm:^7.11.5, @babel/preset-env@npm:^7.14.1, @babel/preset-env@npm:^7.14.2, @babel/preset-env@npm:^7.4.4":
   version: 7.14.2
   resolution: "@babel/preset-env@npm:7.14.2"
   dependencies:
@@ -4367,6 +4367,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@yarnpkg/esbuild-plugin-pnp@npm:^1.0.0-rc.2":
+  version: 1.0.0-rc.2
+  resolution: "@yarnpkg/esbuild-plugin-pnp@npm:1.0.0-rc.2"
+  dependencies:
+    tslib: ^1.13.0
+  peerDependencies:
+    esbuild: ^0.8.36
+  bin:
+    esbuild-plugin-pnp: ./lib/cli.js
+  checksum: bfa55937465b0a4ecae1af2639fdddcf63a614e0a68e10401348fd290c86a630396978c2ab3afccfb1bf90e23b7b45cf11947c0348830d57464f4976c4b30bec
+  languageName: node
+  linkType: hard
+
 "abab@npm:^2.0.0":
   version: 2.0.5
   resolution: "abab@npm:2.0.5"
@@ -7403,6 +7416,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "critical-failure@workspace:."
   dependencies:
+    "@auto-it/core": ^10.27.1
+    "@babel/preset-env": ^7.14.2
     "@nuxt/types": ^2.15.4
     "@nuxt/typescript-build": ^2.1.0
     "@nuxt/typescript-runtime": ^2.1.0
@@ -7416,11 +7431,13 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^4.22.0
     "@typescript-eslint/parser": ^4.22.0
     "@vue/eslint-config-typescript": ^7.0.0
+    "@yarnpkg/esbuild-plugin-pnp": ^1.0.0-rc.2
     anymatch: ^3.1.2
     auto: ^10.27.1
     autoprefixer: ^9
     axios: ^0.21.1
     consola: ^2.15.3
+    esbuild: ^0.11.21
     eslint: ^7.26.0
     eslint-plugin-import: ^2.22.1
     eslint-plugin-vue: ^7.9.0
@@ -7438,6 +7455,7 @@ __metadata:
     pretty-quick: ^3.1.0
     sass: ^1.32.11
     sass-loader: ^10.1.1
+    semver: ^7.3.5
     shelljs: ^0.8.4
     ts-loader: ^8.2.0
     ts-node: ^9.1.1
@@ -9022,6 +9040,15 @@ __metadata:
   bin:
     esbuild: bin/esbuild
   checksum: d5df32620017febc2f7081b6c5d9d49bd79040bd527a0ae4683aa5e9c48b95afcf6362c30b97fc09fbceee7dcdc5c5397f89132f639bac0860205bae09d12931
+  languageName: node
+  linkType: hard
+
+"esbuild@npm:^0.11.21":
+  version: 0.11.21
+  resolution: "esbuild@npm:0.11.21"
+  bin:
+    esbuild: bin/esbuild
+  checksum: 5b122d678a0c00b746f8862a8e51656a268d3416487bfe61006ebb893519ee512d0a66639c23c1aeb89d454812b3f7c6e60e7c5a0859dcebfa8e2fe52ac8bdb4
   languageName: node
   linkType: hard
 
@@ -21759,7 +21786,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1, tslib@npm:^1.14.1, tslib@npm:^1.8.0, tslib@npm:^1.8.1, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
+"tslib@npm:^1, tslib@npm:^1.13.0, tslib@npm:^1.14.1, tslib@npm:^1.8.0, tslib@npm:^1.8.1, tslib@npm:^1.9.0, tslib@npm:^1.9.3":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: f44fe7f216946b17d3e3074df3746372703cf24e9127b4c045511456e8e4bf25515fb0a1bb3937676cc305651c5d4fcb6377b0588a4c6a957e748c4c28905d17

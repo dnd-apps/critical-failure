@@ -1,0 +1,15 @@
+{
+  "plugins": [".auto/release.js"],
+  "owner": "mbround18",
+  "repo": "critical-failure",
+  "name": "mbround18",
+  "email": "12646562+mbround18@users.noreply.github.com",
+  "onlyPublishWithReleaseLabel": true,
+  "noDefaultLabels": true,
+  "labels": [
+    { "releaseType": "major", "name": "Version: Major" },
+    { "releaseType": "minor", "name": "Version: Minor" },
+    { "releaseType": "patch", "name": "Version: Patch" },
+    { "releaseType": "release", "name": "Cut & Publish Release" }
+  ]
+}
