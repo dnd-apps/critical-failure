@@ -1,6 +1,6 @@
 {
   "plugins": [
-    ".auto/plugins/release.ts",
+    ".auto/plugins/release.js",
   ],
   "owner": "mbround18",
   "repo": "critical-failure",
