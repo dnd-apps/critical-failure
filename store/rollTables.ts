@@ -53,12 +53,12 @@ export const actions = {
   async findSelectedEntryIndex({ commit, state: {selectedTableId, tables} }: any, num: number) {
     const selectedTable = tables.find(({ id }: any) => id === selectedTableId)
     if (selectedTable) {
-      const selectedEntryIndex = findIndex(selectedTable.entries, ({ high, low }: any) => 
+      const selectedEntryIndex = findIndex(selectedTable.entries, ({ high, low }: any) =>
         sortedUniq([+low, ...range(+low, +high), +high]).includes(+num)
       );
       if (selectedEntryIndex) {
         commit('setSelectedEntryIndex', { index: selectedEntryIndex });
-      }      
+      }
     }
   }
 }

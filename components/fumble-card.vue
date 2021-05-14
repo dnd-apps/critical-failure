@@ -3,7 +3,7 @@
     <div id="fumble-rolls" class="flex flex-row justify-between width-full">
       <div id="low-roll">
         <strong>Low {{low}}</strong>
-      </div>      
+      </div>
       <div id="high-roll">
         <strong>High {{high}}</strong>
       </div>
@@ -12,7 +12,7 @@
       <p class="italic pt-1">{{title}}</p>
       <hr>
       <p>{{effect}}</p>
-    </div>    
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -26,6 +26,8 @@ const FumbleCardProps = Vue.extend({
     low: Number
   }
 })
+
+@Component
 export default class FumbleCard extends FumbleCardProps {
 
 }

@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    ".auto/plugins/release.ts",
+  ],
+  "owner": "mbround18",
+  "repo": "critical-failure",
+  "name": "mbround18",
+  "email": "12646562+mbround18@users.noreply.github.com",
+  "onlyPublishWithReleaseLabel": true
+}
