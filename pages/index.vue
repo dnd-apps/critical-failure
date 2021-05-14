@@ -21,9 +21,10 @@
       <fumble-card class="w-full" v-bind="selectedEntry"></fumble-card>
       <div class="text-white pt-2">
         <v-btn
-          class="p-2 m-4"
-          @click="rollTheDice()"
-          dark
+            class="p-2 m-4"
+            @click="rollTheDice()"
+            dark
+            color="rgba(124, 58, 237)"
         >
           Roll
         </v-btn>
@@ -195,6 +196,13 @@ html {
   }
 }
 
+.roll-btn {
+  * {
+    @apply bg-purple-600;
+  }
+
+}
+
 .fumble-table-tab {
   background-color: white;
   @apply text-blue-700;
@@ -207,7 +215,7 @@ html {
   @apply font-semibold;
   display: inline-block;
   &.selected {
-    @apply bg-blue-600;
+    @apply bg-purple-600;
     color: snow;
   }
 }
