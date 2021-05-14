@@ -21,7 +21,15 @@ jobs:
 
       - uses: actions/cache@v2
         with:
-          path: '**/node_modules'
+          path: |
+            **/node_modules
+            .yarn/*
+            !.yarn/cache
+            !.yarn/patches
+            !.yarn/plugins
+            !.yarn/releases
+            !.yarn/sdks
+            !.yarn/versions
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: Yarn install
