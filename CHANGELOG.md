@@ -1,3 +1,16 @@
+# v1.0.2 (Fri May 14 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:mbround18/critical-failure into main ([@mbround18](https://github.com/mbround18))
+- release yml ([@mbround18](https://github.com/mbround18))
+
+#### Authors: 1
+
+- Michael ([@mbround18](https://github.com/mbround18))
+
+---
+
 # v1.0.1 (Fri May 14 2021)
 
 
