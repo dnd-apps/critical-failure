@@ -1,16 +1,15 @@
 module.exports = {
   future: {
-    removeDeprecatedGapUtilities: true, 
+    removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
     defaultLineHeights: true,
-    standardFontWeights: true   
+    standardFontWeights: true,
   },
   purge: [
-    './pages/**/*.html',
-    './pages/**/*.vue',
-    './pages/**/*.jsx',
-    './components/**/*.html',
-    './components/**/*.vue',
-    './components/**/*.jsx',
+    "./components/**/*.{vue,js}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
   ],
-}
+};

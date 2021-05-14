@@ -1,5 +1,5 @@
 <template>
-  <div class="fumble-card">
+  <v-card color="purple" elevation="9" class="fumble-card">
     <div id="fumble-rolls" class="flex flex-row justify-between width-full">
       <div id="low-roll">
         <strong>Low {{low}}</strong>
@@ -13,7 +13,7 @@
       <hr>
       <p>{{effect}}</p>
     </div>
-  </div>
+  </v-card>
 </template>
 <script lang="ts">
 import Vue from "vue";

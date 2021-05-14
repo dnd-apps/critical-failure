@@ -5,13 +5,12 @@ export const state = () => ({
   numberOfDice: 1,
   dieSize: 20,
   currentRoll: 1,
-  unparsedDieSize: "1d20"
+  unparsedDieSize: "1d20",
 });
-
 
 export const mutations = {
   // tslint:disable-next-line: no-shadowed-variable
-  setCurrentRoll(state: any, numbers: number[] ) {
+  setCurrentRoll(state: any, numbers: number[]) {
     state.currentRoll = sum(numbers);
   },
   // tslint:disable-next-line: no-shadowed-variable
@@ -24,13 +23,12 @@ export const mutations = {
         merge(state, { numberOfDice, dieSize });
       }
     }
-  }
+  },
 };
-
 
 export const actions = {
   rollTheDice({ commit, state: { numberOfDice, dieSize } }: any) {
     const rolls = new Array(numberOfDice).map(() => random(1, dieSize));
     commit("setCurrentRoll", rolls);
-  }
+  },
 };
