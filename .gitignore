@@ -9,7 +9,6 @@ _templates
 !.yarn/versions
 .pnp.*
 
-.auto/plugins/release.js
 
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all,vuejs,visualstudiocode,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains+all,vuejs,visualstudiocode,node

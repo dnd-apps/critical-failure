@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "start": "nuxt start",
     "lint": "eslint '{assets,components,data,pages,store}/**/*.{ts,js,vue}'",
-    "prerelease": "node ./.auto/build-plugins.js",
+    "prerelease": "node esbuild.js",
     "release": "auto shipit"
   },
   "dependencies": {

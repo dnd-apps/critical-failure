@@ -1,27 +1,24 @@
-import {
-  Auto,
+const {
   determineNextVersion,
   execPromise,
-  IPlugin,
   getCurrentBranch,
   DEFAULT_PRERELEASE_BRANCHES,
-} from "@auto-it/core";
-// @ts-ignore
-import { inc, ReleaseType } from "semver";
-
-export default class GitTagPlugin implements IPlugin {
+} = require("@auto-it/core");
+const { inc } = require("semver");
+module.exports = class GitTagPlugin {
   /** The name of the plugin */
   name = "release";
 
   /** Tap into auto plugin points. */
-  apply(auto: Auto) {  /** Get the latest tag in the repo, if none then the first commit */
-  async function getTag() {
-    try {
-      return await auto.git!.getLatestTagInBranch();
-    } catch (error) {
-      return auto.prefixRelease("0.0.0");
+  apply(auto) {
+    /** Get the latest tag in the repo, if none then the first commit */
+    async function getTag() {
+      try {
+        return await auto.git.getLatestTagInBranch();
+      } catch (error) {
+        return auto.prefixRelease("0.0.0");
+      }
     }
-  }
 
     auto.hooks.getPreviousVersion.tapPromise(this.name, async () => {
       if (!auto.git) {
@@ -41,7 +38,7 @@ export default class GitTagPlugin implements IPlugin {
         }
 
         const lastTag = await getTag();
-        const newTag = inc(lastTag, bump as ReleaseType);
+        const newTag = inc(lastTag, bump);
 
         if (!newTag) {
           auto.logger.log.info("No release found, doing nothing");
@@ -112,7 +109,7 @@ export default class GitTagPlugin implements IPlugin {
     auto.hooks.publish.tapPromise(this.name, async () => {
       auto.logger.log.info("Pushing new tag to GitHub");
       if (process.env.GITHUB_REPOSITORY?.length === 0) {
-        throw new Error("Failed to find GITHUB_REPOSITORY in environment!")
+        throw new Error("Failed to find GITHUB_REPOSITORY in environment!");
       }
 
       await execPromise("git", [
@@ -131,4 +128,4 @@ export default class GitTagPlugin implements IPlugin {
       ]);
     });
   }
-}
+};
