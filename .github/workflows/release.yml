@@ -1,6 +1,9 @@
 name: Release
 
-on: [release]
+on:
+  release:
+    types: [published]
+
 
 jobs:
   generate:
@@ -40,6 +43,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     environment: Netlify
+    needs: generate
     steps:
       - uses: actions/setup-node@v2
         with:
