@@ -2,12 +2,12 @@ _templates
 .cache
 .fusebox
 .yarn/*
-!.yarn/cache
 !.yarn/patches
-!.yarn/plugins
 !.yarn/releases
+!.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+.pnp.*
 
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all,vuejs,visualstudiocode,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains+all,vuejs,visualstudiocode,node

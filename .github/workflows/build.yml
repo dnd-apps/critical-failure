@@ -16,12 +16,12 @@ jobs:
           path: |
             **/node_modules
             .yarn/*
-            !.yarn/cache
             !.yarn/patches
-            !.yarn/plugins
             !.yarn/releases
+            !.yarn/plugins
             !.yarn/sdks
             !.yarn/versions
+            .pnp.*
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install packages
@@ -42,12 +42,12 @@ jobs:
           path: |
             **/node_modules
             .yarn/*
-            !.yarn/cache
             !.yarn/patches
-            !.yarn/plugins
             !.yarn/releases
+            !.yarn/plugins
             !.yarn/sdks
             !.yarn/versions
+            .pnp.*
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install packages

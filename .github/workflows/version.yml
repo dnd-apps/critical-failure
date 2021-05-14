@@ -24,12 +24,13 @@ jobs:
           path: |
             **/node_modules
             .yarn/*
-            !.yarn/cache
+            .yarn/*
             !.yarn/patches
-            !.yarn/plugins
             !.yarn/releases
+            !.yarn/plugins
             !.yarn/sdks
             !.yarn/versions
+            .pnp.*
           key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: Yarn install
