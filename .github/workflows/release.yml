@@ -40,6 +40,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     environment: Netlify
+    needs: generate
     steps:
       - uses: actions/setup-node@v2
         with:
