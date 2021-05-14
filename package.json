@@ -53,7 +53,7 @@
     "husky": "^6.0.0",
     "netlify-cli": "^3.29.14",
     "parcel": "^1.12.4",
-    "postcss": "^7",
+    "postcss": "^8.0.0",
     "postcss-responsive-type": "^1.0.0",
     "postcss-selector-parser": "^6.0.2",
     "prettier": "^2.3.0",
