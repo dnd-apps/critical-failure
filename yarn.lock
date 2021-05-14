@@ -3467,7 +3467,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:15.0.3":
+"@types/node@npm:*":
   version: 15.0.3
   resolution: "@types/node@npm:15.0.3"
   checksum: 72bfbac4282443a7b5d5b43c7c39fe855aa1687b5fa5629b735fd2ceacf371b711ccfc956c8af1b1cbd9c74c79be845a801a4c7275048f340aa0df3beec6b10f
@@ -3478,6 +3478,13 @@ __metadata:
   version: 12.20.12
   resolution: "@types/node@npm:12.20.12"
   checksum: df72a72ded771a04c5a6c938f7b7bfad16a08c8a64337a3829d6fdc9488dd93cb23bce42affe7e1c846994396f6e32937cbd35dfcd55bc8c1963814f3ec59c95
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:15.3.0":
+  version: 15.3.0
+  resolution: "@types/node@npm:15.3.0"
+  checksum: 44039665ab71a6ec12e6637a9db4ec3123fdfaf52952ca8028a6f1b37c41c2d380e88d28a41e02693bf9d4815307e0ad938815bf8ffedc5f4d045855fa28db06
   languageName: node
   linkType: hard
 
@@ -7426,7 +7433,7 @@ __metadata:
     "@octokit/core": 3.4.0
     "@tailwindcss/postcss7-compat": 2.1.2
     "@types/lodash": 4.14.169
-    "@types/node": 15.0.3
+    "@types/node": 15.3.0
     "@types/semver": 7.3.6
     "@typescript-eslint/eslint-plugin": 4.23.0
     "@typescript-eslint/parser": 4.23.0
