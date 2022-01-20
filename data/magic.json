@@ -128,8 +128,8 @@
   {
     "low": 71,
     "high": 75,
-    "title": "Lodged weapon",
-    "effect": " Your weapon becomes stuck in the floor or a nearby object. You must make a DC 14 STR check to remove it as an action."
+    "title": "Fizzle",
+    "effect": "For the rest of the round you cannot use magic, your magic that you just cast fizzles into dust."
   },
   {
     "low": 76,
