@@ -30,7 +30,7 @@
     "@nuxt/types": "2.15.6",
     "@nuxt/typescript-build": "2.1.0",
     "@nuxt/typescript-runtime": "2.1.0",
-    "@nuxtjs/tailwindcss": "4.1.2",
+    "@nuxtjs/tailwindcss": "4.2.1",
     "@nuxtjs/vuetify": "1.11.3",
     "@octokit/core": "3.4.0",
     "@tailwindcss/postcss7-compat": "2.1.2",
