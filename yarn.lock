@@ -3540,16 +3540,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/vuetify@npm:1.11.3":
-  version: 1.11.3
-  resolution: "@nuxtjs/vuetify@npm:1.11.3"
+"@nuxtjs/vuetify@npm:1.12.3":
+  version: 1.12.3
+  resolution: "@nuxtjs/vuetify@npm:1.12.3"
   dependencies:
     deepmerge: ^4.2.2
-    sass: ^1.32.4
-    sass-loader: ^10.1.1
-    vuetify: ^2.4.2
-    vuetify-loader: ^1.6.0
-  checksum: 553cc83186c3da7deaca4962cd690378f0686dde48838f2888bae312e33d5944ac1d7b5218066e4f291c435ae8f02fda6d0c45a3dacc6f342cf7681e87dd7883
+    sass: ~1.32.13
+    sass-loader: ^10.2.0
+    vuetify: ^2.6
+    vuetify-loader: ^1.7.3
+  checksum: a251c12b87f5e53889610a43700d281b26f3fcc9f8f29194abc969c2d2f43c36aca40940e441a59dc7047877e65950094cd50a7cd71174e0008411b6d9fcdfce
   languageName: node
   linkType: hard
 
@@ -5567,7 +5567,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-walk@npm:^8.1.1":
+"acorn-walk@npm:^8.1.1, acorn-walk@npm:^8.2.0":
   version: 8.2.0
   resolution: "acorn-walk@npm:8.2.0"
   checksum: 93ffbdb8b35dda04313f1d6a94bdfdf8f929337f742e3a6d51b3026ced8471feb6a522646240809da44b0f576f4902ff2fa0c64292b3216478992aefcbde3278
@@ -8592,7 +8592,7 @@ __metadata:
     "@nuxt/typescript-build": 2.1.0
     "@nuxt/typescript-runtime": 2.1.0
     "@nuxtjs/tailwindcss": 4.2.1
-    "@nuxtjs/vuetify": 1.11.3
+    "@nuxtjs/vuetify": 1.12.3
     "@octokit/core": 3.4.0
     "@tailwindcss/postcss7-compat": 2.1.2
     "@types/lodash": 4.14.169
@@ -20248,7 +20248,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:10.2.0, sass-loader@npm:^10.1.1":
+"sass-loader@npm:10.2.0":
   version: 10.2.0
   resolution: "sass-loader@npm:10.2.0"
   dependencies:
@@ -20273,7 +20273,32 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"sass@npm:1.32.13, sass@npm:^1.32.4":
+"sass-loader@npm:^10.2.0":
+  version: 10.4.1
+  resolution: "sass-loader@npm:10.4.1"
+  dependencies:
+    klona: ^2.0.4
+    loader-utils: ^2.0.0
+    neo-async: ^2.6.2
+    schema-utils: ^3.0.0
+    semver: ^7.3.2
+  peerDependencies:
+    fibers: ">= 3.1.0"
+    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+    sass: ^1.3.0
+    webpack: ^4.36.0 || ^5.0.0
+  peerDependenciesMeta:
+    fibers:
+      optional: true
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+  checksum: 1a450997dac0123f21cec65192114ca27918c02ab87dd2325f77294ee74f9b7afbdac9b8dfda265a108e0ea7ceeb675546c9395f902b0993af093e433f991ee1
+  languageName: node
+  linkType: hard
+
+"sass@npm:1.32.13, sass@npm:~1.32.13":
   version: 1.32.13
   resolution: "sass@npm:1.32.13"
   dependencies:
@@ -23657,18 +23682,30 @@ typescript@^2.5.1:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:^1.6.0":
-  version: 1.7.2
-  resolution: "vuetify-loader@npm:1.7.2"
+"vuetify-loader@npm:^1.7.3":
+  version: 1.9.2
+  resolution: "vuetify-loader@npm:1.9.2"
   dependencies:
+    acorn: ^8.4.1
+    acorn-walk: ^8.2.0
     decache: ^4.6.0
     file-loader: ^6.2.0
     loader-utils: ^2.0.0
   peerDependencies:
-    vue-template-compiler: ^2.6.10
+    gm: ^1.23.0
+    pug: ^2.0.0 || ^3.0.0
+    sharp: "*"
+    vue: ^2.7.2
     vuetify: ^1.3.0 || ^2.0.0
     webpack: ^4.0.0 || ^5.0.0
-  checksum: 4e4fb2ed10fd4a6ede70d49cc5f79b36979ec4b9ab40c6c6678b4f6ae07d58b95094920341dab55046602dfa94320f6d823bc128ccbf7990c640ce7c5d79f615
+  peerDependenciesMeta:
+    gm:
+      optional: true
+    pug:
+      optional: true
+    sharp:
+      optional: true
+  checksum: 2875da9bc47c2188873b347bd584cedb7778d4bbcc1248fc7095cf154e386fe8d1ed5773f18bcfd5830da7054ea28991c5d9cbcdace480cc0c67e6b6b1fe2217
   languageName: node
   linkType: hard
 
@@ -23681,12 +23718,12 @@ typescript@^2.5.1:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.4.2":
-  version: 2.5.0
-  resolution: "vuetify@npm:2.5.0"
+"vuetify@npm:^2.6":
+  version: 2.7.1
+  resolution: "vuetify@npm:2.7.1"
   peerDependencies:
     vue: ^2.6.4
-  checksum: 2360290608c06da840533d7aa4c3c387a4a371498a891897167cfb382e86d96c8e801e5f58ae78bb3225d29f47aa1f7bed96630077aaee61502ec1fae5144c22
+  checksum: 1965f87076427ff6d03a57975fcc88f56d6d1c3730fa5aa479f2a1c3b03b114c4f8db8476b74b897c78a0176efda1bdf6408ecbcf56710b02ace75d86b0fe7c2
   languageName: node
   linkType: hard
 
