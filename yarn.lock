@@ -3707,22 +3707,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/core@npm:3.4.0, @octokit/core@npm:^3.2.3":
-  version: 3.4.0
-  resolution: "@octokit/core@npm:3.4.0"
-  dependencies:
-    "@octokit/auth-token": ^2.4.4
-    "@octokit/graphql": ^4.5.8
-    "@octokit/request": ^5.4.12
-    "@octokit/request-error": ^2.0.5
-    "@octokit/types": ^6.0.3
-    before-after-hook: ^2.2.0
-    universal-user-agent: ^6.0.0
-  checksum: bb8ba9be2c3d944361afff7c674c2bac22e831d37bfcf9b5e676fa19fd1d72d335e4d97e33103e6e91f87b4511c4353116945ade326587ef7a6d5e1f95c0c786
-  languageName: node
-  linkType: hard
-
-"@octokit/core@npm:^3.5.1":
+"@octokit/core@npm:3.6.0, @octokit/core@npm:^3.5.1":
   version: 3.6.0
   resolution: "@octokit/core@npm:3.6.0"
   dependencies:
@@ -3734,6 +3719,21 @@ __metadata:
     before-after-hook: ^2.2.0
     universal-user-agent: ^6.0.0
   checksum: 148e7f53e665309002bb3f344dccf126692d7e59015a80f042e9fafcf472227906fbaacb324dbdbae9bc9148274dad5b531b78e992c1d03b0ee1fad41c3a0fc8
+  languageName: node
+  linkType: hard
+
+"@octokit/core@npm:^3.2.3":
+  version: 3.4.0
+  resolution: "@octokit/core@npm:3.4.0"
+  dependencies:
+    "@octokit/auth-token": ^2.4.4
+    "@octokit/graphql": ^4.5.8
+    "@octokit/request": ^5.4.12
+    "@octokit/request-error": ^2.0.5
+    "@octokit/types": ^6.0.3
+    before-after-hook: ^2.2.0
+    universal-user-agent: ^6.0.0
+  checksum: bb8ba9be2c3d944361afff7c674c2bac22e831d37bfcf9b5e676fa19fd1d72d335e4d97e33103e6e91f87b4511c4353116945ade326587ef7a6d5e1f95c0c786
   languageName: node
   linkType: hard
 
@@ -8593,7 +8593,7 @@ __metadata:
     "@nuxt/typescript-runtime": 2.1.0
     "@nuxtjs/tailwindcss": 4.2.1
     "@nuxtjs/vuetify": 1.11.3
-    "@octokit/core": 3.4.0
+    "@octokit/core": 3.6.0
     "@tailwindcss/postcss7-compat": 2.1.2
     "@types/lodash": 4.14.169
     "@types/node": 15.3.0
