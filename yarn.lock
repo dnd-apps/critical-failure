@@ -4689,10 +4689,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.14.169":
-  version: 4.14.169
-  resolution: "@types/lodash@npm:4.14.169"
-  checksum: a6032afed62863260a209fb7f90471e304b6f1b1e8f6e75b15d6b0c6bcb89567c0c708f93a78349538f9f908cd2fbe6b322a1ccac13eb1b370f05d23cbb5d057
+"@types/lodash@npm:4.14.200":
+  version: 4.14.200
+  resolution: "@types/lodash@npm:4.14.200"
+  checksum: 00d9116ac6460946f909d3382d470706b97063fc49698e0913ddf580f005138dc0ff4327715ef63cae3787a74c7546e1e34215ec66496fcd999c59d8973093ac
   languageName: node
   linkType: hard
 
@@ -8595,7 +8595,7 @@ __metadata:
     "@nuxtjs/vuetify": 1.11.3
     "@octokit/core": 3.4.0
     "@tailwindcss/postcss7-compat": 2.1.2
-    "@types/lodash": 4.14.169
+    "@types/lodash": 4.14.200
     "@types/node": 15.3.0
     "@types/semver": 7.3.6
     "@typescript-eslint/eslint-plugin": 4.23.0
