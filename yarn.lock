@@ -8616,7 +8616,7 @@ __metadata:
     lodash: 4.17.21
     netlify-cli: 3.29.15
     nuxt: 2.15.6
-    postcss: 8.2.15
+    postcss: 8.4.31
     postcss-import: 14.0.2
     postcss-responsive-type: 1.0.0
     postcss-selector-parser: 6.0.6
@@ -18659,14 +18659,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.2.15, postcss@npm:^8.1.10, postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.2.10":
-  version: 8.2.15
-  resolution: "postcss@npm:8.2.15"
+"postcss@npm:8.4.31, postcss@npm:^8.3.5":
+  version: 8.4.31
+  resolution: "postcss@npm:8.4.31"
   dependencies:
-    colorette: ^1.2.2
-    nanoid: ^3.1.23
-    source-map: ^0.6.1
-  checksum: 2d26bc29dedd7656d1f53fa002374a014a8c2c7b9f1538d0fafadb9eae2494f5b037c87de4390d620f622b31d7f15c8c8d88de2bd682e206104fb44e781737df
+    nanoid: ^3.3.6
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: dac8611c6dae958b26897a64328d5d18b3298646a7e57b9609a1256fe177e970e066bfae59a6a94e81831a73a7ddcb1b131680b1a57c2912720c2da255db7d3f
   languageName: node
   linkType: hard
 
@@ -18681,14 +18681,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.5":
-  version: 8.4.31
-  resolution: "postcss@npm:8.4.31"
+"postcss@npm:^8.1.10, postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.2.10":
+  version: 8.2.15
+  resolution: "postcss@npm:8.2.15"
   dependencies:
-    nanoid: ^3.3.6
-    picocolors: ^1.0.0
-    source-map-js: ^1.0.2
-  checksum: dac8611c6dae958b26897a64328d5d18b3298646a7e57b9609a1256fe177e970e066bfae59a6a94e81831a73a7ddcb1b131680b1a57c2912720c2da255db7d3f
+    colorette: ^1.2.2
+    nanoid: ^3.1.23
+    source-map: ^0.6.1
+  checksum: 2d26bc29dedd7656d1f53fa002374a014a8c2c7b9f1538d0fafadb9eae2494f5b037c87de4390d620f622b31d7f15c8c8d88de2bd682e206104fb44e781737df
   languageName: node
   linkType: hard
 
