@@ -8624,7 +8624,7 @@ __metadata:
     pretty-quick: 3.1.3
     sass: 1.32.13
     sass-loader: 10.2.0
-    semver: 7.3.5
+    semver: 7.5.2
     ts-loader: 8.2.0
     ts-node: 9.1.1
     tslint: 5.20.1
@@ -20406,14 +20406,14 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"semver@npm:7.3.5, semver@npm:^7.0.0, semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5":
-  version: 7.3.5
-  resolution: "semver@npm:7.3.5"
+"semver@npm:7.5.2":
+  version: 7.5.2
+  resolution: "semver@npm:7.5.2"
   dependencies:
     lru-cache: ^6.0.0
   bin:
     semver: bin/semver.js
-  checksum: c53624ddf4b9779bcbf55a1eb8b37074cc44bfeca416f3cc263429408202a8a3c59b00eef8c647d697303bc39b95c022a5c61959221d3814bfb1270ff7c14986
+  checksum: a55ca5a3d516dc26feff8c11d0ff3703ab5e74c7b296d557acf0dd043e0ea6b2979ecf324239fb67d34ce6e70a26a3aec47a601584aac0c3e0f67e81976ffd32
   languageName: node
   linkType: hard
 
@@ -20432,6 +20432,17 @@ resolve@~1.7.1:
   bin:
     semver: bin/semver.js
   checksum: 7c627af982bc6485e2d500c8078544f1a3f9a60f8afb058dcdb3bb466c54f340d04a20d228498394ffc231af80514bcc9d78ba40fc1860ef5fc148b34e5a2dc1
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.0.0, semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5":
+  version: 7.3.5
+  resolution: "semver@npm:7.3.5"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: c53624ddf4b9779bcbf55a1eb8b37074cc44bfeca416f3cc263429408202a8a3c59b00eef8c647d697303bc39b95c022a5c61959221d3814bfb1270ff7c14986
   languageName: node
   linkType: hard
 
