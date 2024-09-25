@@ -8637,7 +8637,7 @@ __metadata:
     vue-router: 3.5.1
     vue-template-compiler: 2.6.12
     vue-template-es2015-compiler: 1.9.1
-    vuetify: 2.6.10
+    vuetify: 2.6.11
     vuex: 3.6.2
     vuex-class: 0.3.2
     webpack: 4.46.0
@@ -23672,12 +23672,12 @@ typescript@^2.5.1:
   languageName: node
   linkType: hard
 
-"vuetify@npm:2.6.10":
-  version: 2.6.10
-  resolution: "vuetify@npm:2.6.10"
+"vuetify@npm:2.6.11":
+  version: 2.6.11
+  resolution: "vuetify@npm:2.6.11"
   peerDependencies:
     vue: ^2.6.4
-  checksum: a123eb7c2b8555d0f42df15062026bd17a2b67777a46b36edb8b0b86ef7ef712993b1c0d5438004e876690f46395680dbc903680f7688c99fc8ec33a473920d0
+  checksum: dccdc5f1995bea35a6c6e1219f32dba5a29e51b910e890e0dd5063990e605c38581e71c2b4a686f60bff9fdf34174cd92d75eed46489b67dfae58fdebcd9e3c3
   languageName: node
   linkType: hard
 
