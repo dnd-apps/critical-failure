@@ -1,13 +1,6 @@
 _templates
 .cache
 .fusebox
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all,vuejs,visualstudiocode,node
@@ -230,6 +223,7 @@ dist
 # Recommended template: Node.gitignore
 
 dist/
+.vite
 npm-debug.log
 yarn-error.log
 
